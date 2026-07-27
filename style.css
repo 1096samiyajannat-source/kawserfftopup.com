@@ -119,3 +119,61 @@ border-color:#ffd54a;
 }
 
 .card h3
+/* ===== LOGIN PAGE ===== */
+
+.login-box{
+max-width:420px;
+margin:60px auto;
+padding:30px;
+background:linear-gradient(135deg,#ff4fd8,#7b2cff,#ffd54a);
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 35px rgba(0,0,0,.35);
+}
+
+.login-box h1{
+font-size:30px;
+color:#fff;
+margin-bottom:10px;
+}
+
+.login-box p{
+color:#fff;
+margin-bottom:20px;
+}
+
+.login-box input{
+width:100%;
+padding:14px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+font-size:16px;
+outline:none;
+box-sizing:border-box;
+}
+
+.login-btn{
+width:100%;
+padding:14px;
+background:#fff;
+color:#7b2cff;
+font-size:18px;
+font-weight:bold;
+border:none;
+border-radius:10px;
+cursor:pointer;
+margin-top:10px;
+}
+
+.login-btn:hover{
+background:#ffd54a;
+color:#000;
+}
+
+.register a,
+.login-box a{
+color:#fff;
+font-weight:bold;
+text-decoration:none;
+  }
