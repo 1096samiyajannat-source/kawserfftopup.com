@@ -45,3 +45,8 @@ Transaction ID: ${trx}
   });
 
 });
+const savedUser = localStorage.getItem("userEmail");
+
+if(savedUser){
+
+const panel=document.getElementById("userPanel");
