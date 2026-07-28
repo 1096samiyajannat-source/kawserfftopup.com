@@ -51,6 +51,9 @@ document.querySelector(".login-btn").innerHTML="Loading...";
 
 setTimeout(function(){
 
+localStorage.setItem("userEmail", email);
+localStorage.setItem("userPassword", pass);
+
 alert("✅ Registration Complete Successfully");
 
 window.location.href="login.html";
