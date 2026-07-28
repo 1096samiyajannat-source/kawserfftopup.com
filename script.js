@@ -50,3 +50,22 @@ const savedUser = localStorage.getItem("userEmail");
 if(savedUser){
 
 const panel=document.getElementById("userPanel");
+if(savedUser){
+
+document.getElementById("userPanel").style.display="block";
+
+document.getElementById("welcomeUser").innerHTML=
+"👤 Welcome<br>"+savedUser;
+
+}
+
+function logoutUser(){
+
+localStorage.removeItem("userEmail");
+localStorage.removeItem("userPassword");
+
+alert("Logout Successful");
+
+window.location.href="login.html";
+
+      }
