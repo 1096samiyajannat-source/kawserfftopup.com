@@ -75,13 +75,7 @@ let savedUser = localStorage.getItem("userEmail");
 
 if(savedUser){
 
-document.getElementById("userPanel").style.display="block";
 
-document.getElementById("welcomeUser").innerHTML="👤 Welcome<br>"+savedUser;
-
-}
-
-});
 
 function logoutUser(){
 
