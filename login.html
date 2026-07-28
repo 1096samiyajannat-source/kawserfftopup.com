@@ -16,9 +16,9 @@
 
 <p>Bangladesh Trusted Free Fire Top-Up</p>
 
-<input type="text" placeholder="Enter UID">
+<input type="email" id="email" placeholder="Enter Gmail">
 
-<input type="password" placeholder="Password">
+<input type="password" id="password" placeholder="Enter Password">
 
 <button class="login-btn" onclick="loginUser()">
 LOGIN
@@ -64,5 +64,28 @@ window.location.href="login.html";
 
 }
 </script>
+  <script>
+function loginUser(){
+
+let email=document.getElementById("email").value;
+let pass=document.getElementById("password").value;
+
+let savedEmail=localStorage.getItem("userEmail");
+let savedPass=localStorage.getItem("userPassword");
+
+if(email==savedEmail && pass==savedPass){
+
+alert("✅ Login Successful");
+
+window.location.href="index.html";
+
+}else{
+
+alert("❌ Wrong Gmail or Password");
+
+}
+
+}
+  </script>
 </body>
 </html>
