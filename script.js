@@ -69,3 +69,25 @@ alert("Logout Successful");
 window.location.href="login.html";
 
       }
+document.addEventListener("DOMContentLoaded", function(){
+
+let savedUser = localStorage.getItem("userEmail");
+
+if(savedUser){
+
+document.getElementById("userPanel").style.display="block";
+
+document.getElementById("welcomeUser").innerHTML="👤 Welcome<br>"+savedUser;
+
+}
+
+});
+
+function logoutUser(){
+
+localStorage.removeItem("userEmail");
+localStorage.removeItem("userPassword");
+
+window.location.href="login.html";
+
+  }
