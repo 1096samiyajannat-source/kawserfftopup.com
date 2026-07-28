@@ -20,8 +20,8 @@
 
 <input type="password" placeholder="Password">
 
-<button class="login-btn">
-LOGIN
+<button class="login-btn" onclick="registerUser()">
+Registration Complete
 </button>
 
 <p class="register">
@@ -38,6 +38,31 @@ Forgot Password?
 </div>
 
 <script src="script.js"></script>
+<script>
+function registerUser(){
 
+let email=document.getElementById("email").value;
+let pass=document.getElementById("password").value;
+let confirm=document.getElementById("confirm").value;
+
+if(email==""||pass==""||confirm==""){
+alert("Please fill all fields");
+return;
+}
+
+if(pass!=confirm){
+alert("Password Not Match");
+return;
+}
+
+localStorage.setItem("userEmail",email);
+localStorage.setItem("userPassword",pass);
+
+alert("Registration Complete Successfully");
+
+window.location.href="login.html";
+
+}
+</script>
 </body>
 </html>
