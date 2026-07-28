@@ -235,7 +235,29 @@ color:#333;
     box-shadow:0 0 15px #ff9900;
     transition:0.3s;
 }
+.card:nth-child(1) button{
+    background:#ffffff;
+    color:#ff3ea5;
+    box-shadow:0 0 15px #ff3ea5;
+}
 
+.card:nth-child(2) button{
+    background:#ffffff;
+    color:#00c853;
+    box-shadow:0 0 15px #00c853;
+}
+
+.card:nth-child(3) button{
+    background:#ffffff;
+    color:#2979ff;
+    box-shadow:0 0 15px #2979ff;
+}
+
+.card:nth-child(4) button{
+    background:#ffffff;
+    color:#ff9800;
+    box-shadow:0 0 15px #ff9800;
+    }
 .card:nth-child(2) button{
     background:linear-gradient(90deg,#00c6ff,#0072ff);
     box-shadow:0 0 15px #00c6ff;
